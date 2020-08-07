@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="split designer">
+        <!-- <div class="overlay-desig"> -->
+            <h1>The Designer</h1>
+            <a href="#" class='button'>Read More</a>
+        <!-- </div> -->
+    </div>
+    <div class="split programmer">
+        <!-- <div class="overlay-prog"> -->
+            <h1>The Programmer</h1>
+            <a href="#" class='button'>Read More</a>
+        <!-- </div> -->
+    </div>
+</div>    
+<script>
+    document.querySelector('.designer').addEventListener('mouseenter',()=>
+    document.querySelector('.container').classList.add('designer-hover'))
+    document.querySelector('.designer').addEventListener('mouseleave',()=>
+    document.querySelector('.container').classList.remove('designer-hover'))
+    document.querySelector('.programmer').addEventListener('mouseenter',()=>
+    document.querySelector('.container').classList.add('programmer-hover'))
+    document.querySelector('.programmer').addEventListener('mouseleave',()=>
+    document.querySelector('.container').classList.remove('programmer-hover'))
+</script>
+</body>
+</html>

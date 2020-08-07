@@ -92,6 +92,9 @@
 .programmer-hover .designer{
     width: var(--other-width);
 }
+.designer-hover .split.programmer::before{
+    z-index: 2;
+}
 .programmer{
  right: 0;
  background: url('https://image.ibb.co/m3ZbRb/programmer.png') no-repeat center center/cover;
@@ -112,6 +115,9 @@
 }
 .programmer-hover .programmer{
     width: var(--hover-width);
+}
+.programmer-hover .split.designer:before{
+    z-index: 2;
 }
 .designer .button:hover,.designer-hover .designer,
 .programmer .button:hover,.designer-hover .programmer,
